@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -22,6 +23,7 @@ export default function Navbar() {
     <header className="site-header">
       <nav className="navbar container">
 
+        {/* Brand */}
         <Link
           href="/"
           className="brand"
@@ -35,18 +37,32 @@ export default function Navbar() {
           </span>
         </Link>
 
+        {/* Desktop Navigation */}
         <div className="desktop-navigation">
-          <Link href="/">{t("home")}</Link>
-          <Link href="#tours">{t("tours")}</Link>
-          <Link href="#about">{t("about")}</Link>
-          <Link href="#contact">{t("contact")}</Link>
+          <Link href="/">
+            {t("home")}
+          </Link>
+
+          <a href="#tours">
+            {t("tours")}
+          </a>
+
+          <a href="#about">
+            {t("about")}
+          </a>
+
+          <a href="#footer-contact">
+            {t("contact")}
+          </a>
         </div>
 
+        {/* Navbar Actions */}
         <div className="navbar-actions">
           <LanguageSwitcher />
 
+          {/* Book Now Button */}
           <a
-            href="#contact"
+            href="#footer-contact"
             className="nav-cta"
           >
             <MessageCircle size={16} />
@@ -55,6 +71,7 @@ export default function Navbar() {
           </a>
         </div>
 
+        {/* Mobile Menu Button */}
         <button
           type="button"
           className="mobile-menu-button"
@@ -67,27 +84,41 @@ export default function Navbar() {
 
       </nav>
 
+      {/* Mobile Navigation */}
       {menuOpen && (
         <div className="mobile-navigation">
+
           <Link href="/" onClick={closeMenu}>
             {t("home")}
           </Link>
 
-          <Link href="#tours" onClick={closeMenu}>
+          <a href="#tours" onClick={closeMenu}>
             {t("tours")}
-          </Link>
+          </a>
 
-          <Link href="#about" onClick={closeMenu}>
+          <a href="#about" onClick={closeMenu}>
             {t("about")}
-          </Link>
+          </a>
 
-          <Link href="#contact" onClick={closeMenu}>
+          <a href="#footer-contact" onClick={closeMenu}>
             {t("contact")}
-          </Link>
+          </a>
+
+          {/* Mobile Book Now */}
+          <a
+            href="#footer-contact"
+            className="nav-cta"
+            onClick={closeMenu}
+          >
+            <MessageCircle size={16} />
+            <span>{t("book")}</span>
+            <ArrowUpRight size={15} />
+          </a>
 
           <div className="mobile-language">
             <LanguageSwitcher />
           </div>
+
         </div>
       )}
     </header>

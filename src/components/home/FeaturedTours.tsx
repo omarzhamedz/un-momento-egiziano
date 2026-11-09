@@ -28,30 +28,22 @@ export default function FeaturedTours() {
 
   return (
     <section className="tours-section section-padding" id="tours">
-
       <div className="container">
-
         <div className="section-heading">
           <div>
-            <span className="section-eyebrow">
-              {t("eyebrow")}
-            </span>
+            <span className="section-eyebrow">{t("eyebrow")}</span>
 
             <h2>{t("heading")}</h2>
 
             <p>{t("description")}</p>
           </div>
 
-          <span className="tour-count">
-            03 EXPERIENCES
-          </span>
+          <span className="tour-count">03 EXPERIENCES</span>
         </div>
 
         <div className="tours-grid">
-
           {tours.map((tour, index) => (
             <article className="tour-card" key={tour.key}>
-
               <div
                 className="tour-image"
                 style={{
@@ -65,13 +57,10 @@ export default function FeaturedTours() {
                   `,
                 }}
               >
-                <span className="tour-number">
-                  0{index + 1}
-                </span>
+                <span className="tour-number">0{index + 1}</span>
               </div>
 
               <div className="tour-card-content">
-
                 <span className="tour-duration">
                   {t(`${tour.key}.subtitle`)}
                 </span>
@@ -81,33 +70,27 @@ export default function FeaturedTours() {
                 <p>{t(`${tour.key}.description`)}</p>
 
                 <div className="tour-card-footer">
-
                   <div className="tour-price">
                     <small>{t("from")}</small>
                     <strong>€{tour.price}</strong>
                     <small>{t("perGroup")}</small>
                   </div>
 
-                  <Link
-                    href="#contact"
+                  {/* Navigate to the booking form */}
+                  <a
+                    href="#footer-contact"
                     className="tour-link"
                     aria-label={`${t(`${tour.key}.title`)} - ${t("requestInfo")}`}
                   >
                     <ArrowUpRight size={20} />
-                  </Link>
-
+                  </a>
                 </div>
-
               </div>
             </article>
           ))}
-
         </div>
 
-        <p className="price-disclaimer">
-          {t("priceDisclaimer")}
-        </p>
-
+        <p className="price-disclaimer">{t("priceDisclaimer")}</p>
       </div>
     </section>
   );
