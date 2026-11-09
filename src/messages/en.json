@@ -1,0 +1,88 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "tours": "Our Tours",
+    "about": "About Us",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "Hero": {
+    "location": "LUXOR, EGYPT",
+    "title": "Discover the magic",
+    "highlight": "of ancient Egypt.",
+    "description": "Experience unforgettable moments in Luxor with Tahany, your Italian-speaking tour guide.",
+    "primaryButton": "Explore Our Tours",
+    "secondaryButton": "Meet Tahany",
+    "bottomText": "A JOURNEY INTO THE HEART OF HISTORY"
+  },
+  "Trust": {
+    "privateCar": {
+      "title": "Private Car",
+      "description": "Comfort and air conditioning"
+    },
+    "tickets": {
+      "title": "Tickets Included",
+      "description": "Admission to included sites"
+    },
+    "italianGuide": {
+      "title": "Italian-Speaking Guide",
+      "description": "Discover Egypt in your language"
+    },
+    "personalized": {
+      "title": "Private Tours",
+      "description": "Personalized experiences"
+    }
+  },
+  "Tours": {
+    "eyebrow": "CURATED EXPERIENCES",
+    "heading": "Discover Our Tours",
+    "description": "Explore the treasures of Luxor through private itineraries designed around you.",
+    "from": "Starting from",
+    "perGroup": "per group",
+    "requestInfo": "Request information",
+    "priceDisclaimer": "Indicative prices. Final cost depends on the itinerary and requested services.",
+    "west": {
+      "subtitle": "THE WEST BANK",
+      "title": "Luxor West Bank",
+      "description": "Visit the Valley of the Kings, Hatshepsut Temple and the Colossi of Memnon."
+    },
+    "east": {
+      "subtitle": "THE EAST BANK",
+      "title": "Luxor East Bank",
+      "description": "Discover the grandeur of Karnak and Luxor Temples."
+    },
+    "full": {
+      "subtitle": "THE COMPLETE EXPERIENCE",
+      "title": "Luxor Full Day",
+      "description": "Spend a full day discovering the treasures of both the East and West Banks."
+    }
+  },
+  "About": {
+    "eyebrow": "YOUR LOCAL GUIDE",
+    "heading": "Egypt, through Tahany's eyes.",
+    "intro": "Every journey deserves to become a special memory.",
+    "description": "With an Italian-speaking tour guide, discover the history, culture and secrets of ancient Egypt through a private and personalized experience.",
+    "signature": "Your guide in Egypt",
+    "imageAlt": "Tahany with her guests during a tour in Egypt",
+    "imageLabel": "MEET YOUR GUIDE",
+    "button": "Discover more"
+  },
+  "Booking": {
+    "eyebrow": "YOUR JOURNEY STARTS HERE",
+    "heading": "Ready to discover Egypt?",
+    "description": "Tell us about your trip and together we will organize an unforgettable experience in Luxor.",
+    "button": "Contact Us",
+    "note": "Private experiences • Italian-speaking guide • Luxor, Egypt"
+  },
+  "Footer": {
+    "description": "Private experiences in Egypt, with a passion for sharing its history.",
+    "explore": "Explore",
+    "home": "Home",
+    "tours": "Our Tours",
+    "about": "About Us",
+    "contactTitle": "Contact",
+    "location": "Luxor, Egypt",
+    "contactUs": "Let's plan your trip",
+    "rights": "All rights reserved."
+  }
+}

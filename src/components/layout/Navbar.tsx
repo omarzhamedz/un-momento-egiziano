@@ -1,0 +1,95 @@
+"use client";
+
+import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import {
+  Menu,
+  X,
+  MessageCircle,
+  ArrowUpRight,
+} from "lucide-react";
+
+import LanguageSwitcher from "./LanguageSwitcher";
+
+export default function Navbar() {
+  const t = useTranslations("Navigation");
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
+  return (
+    <header className="site-header">
+      <nav className="navbar container">
+
+        <Link
+          href="/"
+          className="brand"
+          onClick={closeMenu}
+        >
+          <span className="brand-mark">U</span>
+
+          <span className="brand-text">
+            <strong>UN MOMENTO</strong>
+            <small>EGIZIANO</small>
+          </span>
+        </Link>
+
+        <div className="desktop-navigation">
+          <Link href="/">{t("home")}</Link>
+          <Link href="#tours">{t("tours")}</Link>
+          <Link href="#about">{t("about")}</Link>
+          <Link href="#contact">{t("contact")}</Link>
+        </div>
+
+        <div className="navbar-actions">
+          <LanguageSwitcher />
+
+          <a
+            href="#contact"
+            className="nav-cta"
+          >
+            <MessageCircle size={16} />
+            <span>{t("book")}</span>
+            <ArrowUpRight size={15} />
+          </a>
+        </div>
+
+        <button
+          type="button"
+          className="mobile-menu-button"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+        >
+          {menuOpen ? <X /> : <Menu />}
+        </button>
+
+      </nav>
+
+      {menuOpen && (
+        <div className="mobile-navigation">
+          <Link href="/" onClick={closeMenu}>
+            {t("home")}
+          </Link>
+
+          <Link href="#tours" onClick={closeMenu}>
+            {t("tours")}
+          </Link>
+
+          <Link href="#about" onClick={closeMenu}>
+            {t("about")}
+          </Link>
+
+          <Link href="#contact" onClick={closeMenu}>
+            {t("contact")}
+          </Link>
+
+          <div className="mobile-language">
+            <LanguageSwitcher />
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}

@@ -1,0 +1,88 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "tours": "I nostri tour",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "book": "Prenota ora"
+  },
+  "Hero": {
+    "location": "LUXOR, EGITTO",
+    "title": "Scopri la magia",
+    "highlight": "dell'antico Egitto.",
+    "description": "Vivi un'esperienza indimenticabile a Luxor con Tahany, la tua guida turistica parlante italiano.",
+    "primaryButton": "Scopri i nostri tour",
+    "secondaryButton": "Conosci Tahany",
+    "bottomText": "UN VIAGGIO NEL CUORE DELLA STORIA"
+  },
+  "Trust": {
+    "privateCar": {
+      "title": "Auto privata",
+      "description": "Comfort e aria condizionata"
+    },
+    "tickets": {
+      "title": "Biglietti inclusi",
+      "description": "Ingresso ai siti previsti"
+    },
+    "italianGuide": {
+      "title": "Guida in italiano",
+      "description": "Scopri l'Egitto nella tua lingua"
+    },
+    "personalized": {
+      "title": "Tour privati",
+      "description": "Esperienze personalizzate"
+    }
+  },
+  "Tours": {
+    "eyebrow": "ESPERIENZE SELEZIONATE",
+    "heading": "Scopri i nostri tour",
+    "description": "Esplora i tesori di Luxor con itinerari privati pensati per te.",
+    "from": "A partire da",
+    "perGroup": "per gruppo",
+    "requestInfo": "Richiedi informazioni",
+    "priceDisclaimer": "Prezzi indicativi. Il costo finale dipende dall'itinerario e dai servizi richiesti.",
+    "west": {
+      "subtitle": "LA RIVA OCCIDENTALE",
+      "title": "Luxor West Bank",
+      "description": "Visita la Valle dei Re, il Tempio di Hatshepsut e i Colossi di Memnone."
+    },
+    "east": {
+      "subtitle": "LA RIVA ORIENTALE",
+      "title": "Luxor East Bank",
+      "description": "Scopri la grandiosità dei Templi di Karnak e Luxor."
+    },
+    "full": {
+      "subtitle": "UN'ESPERIENZA COMPLETA",
+      "title": "Luxor Full Day",
+      "description": "Un'intera giornata alla scoperta dei tesori della riva orientale e occidentale."
+    }
+  },
+  "About": {
+    "eyebrow": "LA TUA GUIDA",
+    "heading": "L'Egitto raccontato da Tahany.",
+    "intro": "Ogni viaggio merita di diventare un ricordo speciale.",
+    "description": "Con una guida turistica parlante italiano, scoprirai la storia, la cultura e i segreti dell'antico Egitto attraverso un'esperienza privata e personalizzata.",
+    "signature": "La tua guida in Egitto",
+    "imageAlt": "Tahany con i suoi ospiti durante un tour in Egitto",
+    "imageLabel": "INCONTRA LA TUA GUIDA",
+    "button": "Scopri di più"
+  },
+  "Booking": {
+    "eyebrow": "IL TUO VIAGGIO INIZIA QUI",
+    "heading": "Pronto a scoprire l'Egitto?",
+    "description": "Raccontaci il tuo viaggio e organizzeremo insieme un'esperienza indimenticabile a Luxor.",
+    "button": "Contattaci",
+    "note": "Esperienze private • Guida in italiano • Luxor, Egitto"
+  },
+  "Footer": {
+    "description": "Esperienze private in Egitto, con la passione di farti scoprire la sua storia.",
+    "explore": "Esplora",
+    "home": "Home",
+    "tours": "I nostri tour",
+    "about": "Chi siamo",
+    "contactTitle": "Contatti",
+    "location": "Luxor, Egitto",
+    "contactUs": "Parliamo del tuo viaggio",
+    "rights": "Tutti i diritti riservati."
+  }
+}
