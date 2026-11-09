@@ -29,7 +29,7 @@ export default function Footer() {
 
             <div className="footer-socials">
               <a
-                href="#footer-contact"
+                href="https://www.instagram.com/unmomentoegiziano/"
                 aria-label="Instagram"
               >
                 <svg
