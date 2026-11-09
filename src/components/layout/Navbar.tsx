@@ -1,15 +1,9 @@
-
 "use client";
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import {
-  Menu,
-  X,
-  MessageCircle,
-  ArrowUpRight,
-} from "lucide-react";
+import { Menu, X, MessageCircle, ArrowUpRight } from "lucide-react";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -22,13 +16,8 @@ export default function Navbar() {
   return (
     <header className="site-header">
       <nav className="navbar container">
-
         {/* Brand */}
-        <Link
-          href="/"
-          className="brand"
-          onClick={closeMenu}
-        >
+        <Link href="/" className="brand" onClick={closeMenu}>
           <span className="brand-mark">U</span>
 
           <span className="brand-text">
@@ -39,21 +28,13 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="desktop-navigation">
-          <Link href="/">
-            {t("home")}
-          </Link>
+          <Link href="/">{t("home")}</Link>
 
-          <a href="#tours">
-            {t("tours")}
-          </a>
+          <a href="#tours">{t("tours")}</a>
 
-          <a href="#about">
-            {t("about")}
-          </a>
+          <a href="#about">{t("about")}</a>
 
-          <a href="#footer-contact">
-            {t("contact")}
-          </a>
+          <a href="#footer-contact">{t("contact")}</a>
         </div>
 
         {/* Navbar Actions */}
@@ -61,10 +42,7 @@ export default function Navbar() {
           <LanguageSwitcher />
 
           {/* Book Now Button */}
-          <a
-            href="#footer-contact"
-            className="nav-cta"
-          >
+          <a href="#footer-contact" className="nav-cta">
             <MessageCircle size={16} />
             <span>{t("book")}</span>
             <ArrowUpRight size={15} />
@@ -81,13 +59,11 @@ export default function Navbar() {
         >
           {menuOpen ? <X /> : <Menu />}
         </button>
-
       </nav>
 
       {/* Mobile Navigation */}
       {menuOpen && (
         <div className="mobile-navigation">
-
           <Link href="/" onClick={closeMenu}>
             {t("home")}
           </Link>
@@ -105,11 +81,7 @@ export default function Navbar() {
           </a>
 
           {/* Mobile Book Now */}
-          <a
-            href="#footer-contact"
-            className="nav-cta"
-            onClick={closeMenu}
-          >
+          <a href="#footer-contact" className="nav-cta" onClick={closeMenu}>
             <MessageCircle size={16} />
             <span>{t("book")}</span>
             <ArrowUpRight size={15} />
@@ -118,7 +90,6 @@ export default function Navbar() {
           <div className="mobile-language">
             <LanguageSwitcher />
           </div>
-
         </div>
       )}
     </header>
